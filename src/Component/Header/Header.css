@@ -1,0 +1,60 @@
+.container {
+    
+}
+.header {
+    display: flex;
+    align-items: center;
+    background-color: var(--primary);
+    position: relative;
+    justify-content: center;
+    height: 100px;
+}
+.header .logo {
+    background-image: url(../../App/img/logo.png);
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0;
+    
+}
+.header_name {
+    text-align: center;
+}
+.name_football_pitches {
+    color: var(--white);
+    font-size: 2.4rem;
+}
+.name_header_slogan {
+    color: var(--red);
+    font-size: 1.8rem;
+}
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--white);
+    font-size: 1.8rem;
+    box-shadow: 1px 0 5px #ccc;
+}
+.menu {
+    color: var(--black);
+
+}
+.link_list {
+    display: flex;
+    align-items: center;
+    
+
+}
+.link_icon {
+    color: var(--black);
+    padding: 10px 20px;
+    transition: all 0.25s linear;
+}
+.link_icon:hover {
+    color: var(--primary);
+    cursor: pointer;
+    opacity: 0.8;
+}

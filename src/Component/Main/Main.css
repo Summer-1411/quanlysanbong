@@ -1,0 +1,132 @@
+.main {
+    margin: auto;
+}
+
+
+.yard-item {
+    box-shadow: 1px 5px 5px 1px #ccc;
+    border-radius: 5px;
+    background-color: var(--primary);
+    margin-bottom: 25px;
+}
+.yard-item-img {
+    background-size: cover;
+    height: 200px;
+    display: flex;
+    background-repeat: no-repeat;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.yard-item:hover .yard-info{
+    opacity: 1;
+}
+.yard-info {
+    /* position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0; */
+    display: flex;
+    opacity: 0;
+    transition: opacity 0.25s linear;
+}
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.322);
+}
+
+.state_item {
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin: auto;
+    position: relative;
+    font-size: 1.8rem;
+}
+.state_item.ready {
+     background-color: var(--green);
+    color: var(--white);
+}
+.state_item.busy {
+    background-color: var(--red);
+    color: var(--white);
+}
+.state_item.short-time {
+    background-color: var(--yellow);
+    color: var(--white);
+}
+.yard-item-info {
+    padding:15px 20px 20px 20px;
+    position: relative;
+}
+.yard-item-name {
+    font-size: 2.2rem;
+    color: var(--white);
+    margin-bottom: 6px;
+}
+.item-category {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.8rem;
+    color: var(--white);
+    margin-bottom: 3px;
+}
+.yart-item-vote i {
+    color: yellow;
+    font-size: 1.4rem;
+    margin: 0 2px;
+}
+.price-item {
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.8rem;
+}
+.price-title {
+    color: var(--white);
+}
+.price-number {
+    color: var(--red);
+}
+.btn-oder {
+    background-color: aqua;
+    padding: 10px 20px;
+    font-size: 2rem;
+    color: var(--white);
+    display: flex;
+    margin-top: 10px;
+    border-radius: 6px;
+    justify-content: center;
+    cursor: pointer;
+}
+.btn-oder:hover {
+    opacity: 0.8;
+    background-color: yellow;
+    color: var(--red);
+}
+
+.busy-item {
+    padding: 10px 20px;
+    font-size: 2rem;
+    display: flex;
+    margin-top: 10px;
+    border-radius: 6px;
+    justify-content: center;
+    cursor: pointer;
+    background-color: rgb(174, 164, 164);
+    color: rgb(255, 255, 255)
+}
+.busy-item:hover {
+    background-color: rgb(174, 164, 164);
+    color: rgb(255, 255, 255);
+    opacity: 0.6;
+}
+.main-order {
+    text-decoration: none;
+}
